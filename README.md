@@ -1,2 +1,0 @@
-# alexbastro
-Personal page
