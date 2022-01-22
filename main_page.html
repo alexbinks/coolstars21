@@ -14,7 +14,33 @@
          }
     a {
        color:rgba(255,230,50, 1);
+    
+
+    .leftpane {
+               width: 33%;
+               height: 100%;
+               float: left;
+               background-color: rosybrown;
+               border-collapse: collapse;
+    }	  
+
+    .middlepane {
+                 width: 30%;
+                 height: 100%;
+                 float: left;
+                 background-color: royalblue;
+                 border-collapse: collapse;
     }
+
+    .rightpane {
+                width: 37%;
+                height: 100%;
+                position: relative;
+                float: right;
+                background-color: yellow;
+                border-collapse: collapse;
+}
+	  
     #regulartext {
 	          color:white;
     }
@@ -25,7 +51,9 @@
 <body>
   <center>
     <div id="regulartext"><h1>It's great to be back!</h1></div>
-    <div><img src="images/BD_facemask.png" alt="Brown Dwarf Masking-Up for CS21!" width="600" height="600"></div>
+    <div class="leftpane"><img src="images/BD_facemask.png" alt="Brown Dwarf Masking-Up for CS21!" width="600" height="600"></div>
+    <div class="middlepane"><img src="images/BD_facemask.png" alt="Brown Dwarf Masking-Up for CS21!" width="600" height="600"></div>
+    <div class="rightpane"><img src="images/BD_facemask.png" alt="Brown Dwarf Masking-Up for CS21!" width="600" height="600"></div>
     <div id="regulartext"><h2 style="color:white;">After nearly three turmultuous years, it gives us great pleasure to welcome you to our <em>in person</em>
       splinter session</h2></div>
     <div id="regulartext">
