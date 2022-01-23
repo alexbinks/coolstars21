@@ -81,31 +81,25 @@
     color:white;
     }
 
-	  
-	  
-
-#panel_middle_71538 {
-margin-left:20%;
-margin-right:20%;
-background-color:lightyellow;
+#box1, #box2, #box3 {
+    position: fixed;
+    left:0; top:0; right:0; bottom:0;
+    padding:20px;
 }
-
-#panel_left_91289 {
-width:20%;
-position:absolute;
-top:0;
-left:0;
-background-color:yellow;
+#box1 {
+    bottom:80%; /* 100 - 20 */
+    border: 5px solid blue;
 }
-
-#panel_right_11891 {
-width:20%;
-position:absolute;
-top:0;
-right:0;
-background-color:pink;
-}	  
-	  
+#box2 {
+    top:20%;
+    right:70%; /* 100 - 30 */
+    border: 5px solid red;
+}
+#box3 {
+    top:20%;
+    left:30%;
+    border: 5px solid lime;
+}
 	  
 </style>
 </head>
@@ -114,14 +108,14 @@ background-color:pink;
 <center>
     <div id="header"><h1>Gaia and Spitzer's Neighbourhood Watch Program<br>
 	  <i>From Stars to Planets to Brown Dwarfs</i></h1></div>
-<div id="panel_middle_71538">Christ</div>
-<div id="panel_left_91289">Almighty</div>
-<div id="panel_right_11891">Wonder</div>
+<div id="box1">Christ</div>
+<div id="box2">Almighty</div>
+<div id="box3">Wonder</div>
 
 	
 	<div id="leftpane">
 	<!--    <div id="regulartext"><h1>It's great to be back!</h1></div>-->
-    <div><h2>After nearly three turmultuous years, it gives us great pleasure to welcome you to our <em>in person</em>
+    <div id="regulartext"><h2>After nearly three turmultuous years, it gives us great pleasure to welcome you to our <em>in person</em>
       splinter session</h2></div>
     <div id="regulartext">
 	 <h3 align="left">A complete volume-limited census of the Solar Neighbourhood for stars and brown-dwarfs all the way down to the D-burning limit is
