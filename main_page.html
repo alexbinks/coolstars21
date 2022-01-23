@@ -33,30 +33,25 @@
                position: absolute;
    }
     
-.leftpane {
-    width: 20%;
-    height: 100%;
-    float: left;
-    background-color: rosybrown;
-    border-collapse: collapse;
+* {
+  box-sizing: border-box;
 }
 
-.middlepane {
-    width: 60%;
-    height: 100%;
-    float: left;
-    background-color: royalblue;
-    border-collapse: collapse;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.rightpane {
-  width: 20%;
-  height: 100%;
-  float: right;
-  background-color: yellow;
-  border-collapse: collapse;
-}
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}	  
+	  	  
 #header {
              width: 1000px;
 	     background-color:rgba(255, 140, 170, 1);
@@ -81,25 +76,7 @@
     color:white;
     }
 
-#box1, #box2, #box3 {
-    position: fixed;
-    left:0; top:0; right:0; bottom:0;
-    padding:20px;
-}
-#box1 {
-    bottom:80%; /* 100 - 20 */
-    border: 5px solid blue;
-}
-#box2 {
-    top:20%;
-    right:70%; /* 100 - 30 */
-    border: 5px solid red;
-}
-#box3 {
-    top:20%;
-    left:30%;
-    border: 5px solid lime;
-}
+
 	  
 </style>
 </head>
@@ -108,12 +85,25 @@
 <center>
     <div id="header"><h1>Gaia and Spitzer's Neighbourhood Watch Program<br>
 	  <i>From Stars to Planets to Brown Dwarfs</i></h1></div>
-<div id="box1">Christ</div>
-<div id="box2">Almighty</div>
-<div id="box3">Wonder</div>
+
+<h2>Three Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
 	
-	<div id="leftpane">
 	<!--    <div id="regulartext"><h1>It's great to be back!</h1></div>-->
     <div id="regulartext"><h2>After nearly three turmultuous years, it gives us great pleasure to welcome you to our <em>in person</em>
       splinter session</h2></div>
